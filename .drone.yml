@@ -1,0 +1,9 @@
+kind: pipeline
+type: docker
+name: test
+
+steps:
+  - name: test
+    commands:
+      - npm i
+      - eslint src/*
